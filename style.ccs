@@ -1,0 +1,77 @@
+:root {
+  --black: #0e0e0e;
+  --offwhite: #f2efea;
+  --blood: #8b0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--black);
+  color: var(--offwhite);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--blood);
+}
+
+.nav a {
+  color: var(--offwhite);
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.motto {
+  color: var(--blood);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+button {
+  background: var(--blood);
+  color: var(--offwhite);
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.collection {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  border: 1px solid var(--blood);
+  padding: 20px;
+}
+
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer {
+  padding: 30px;
+  border-top: 1px solid var(--blood);
+  text-align: center;
+}
